@@ -1,0 +1,10 @@
+﻿빌드 시작: 2017-11-23 오전 11:54:11
+     1>2 노드의 "E:\1. 스터디\5. 프로그래밍\DirectX11\DirectX11\DirectX11_Code\17-11-09-Wander_Flee\DirextX11 Test.vcxproj" 프로젝트(Build 대상)입니다.
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets(381,5): warning MSB8028: The intermediate directory (Debug\) contains files shared from another project (02. 프레임워크와 윈도우 만들기.vcxproj, DirextX11 Test.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+     1>Link:
+         DirextX11 Test.vcxproj -> E:\1. 스터디\5. 프로그래밍\DirectX11\DirectX11\DirectX11_Code\17-11-09-Wander_Flee\Debug\02. 팔각형.exe
+     1>"E:\1. 스터디\5. 프로그래밍\DirectX11\DirectX11\DirectX11_Code\17-11-09-Wander_Flee\DirextX11 Test.vcxproj" 프로젝트를 빌드했습니다(Build 대상).
+
+빌드했습니다.
+
+경과 시간: 00:00:00.69

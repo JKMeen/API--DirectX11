@@ -1,0 +1,49 @@
+////////////////////////////////////////////////////////////////////////////////
+// Filename: texture.ps
+////////////////////////////////////////////////////////////////////////////////
+
+// 픽셀 셰이더는 화면에 그려지는 도형의 각 픽셀들을 실제로 그림
+// 이 픽셀 셰이더에서 PixelInputType을 입력으로 사용하고
+// 최종 픽셀의 색상이 저장된 float4 타입을 반환
+// 픽셀 셰이더는 단지 입력 색상을 바로 출력으로 내보내는 단순한 프로그램임
+// 정점 셰이더의 결과물을 픽셀 셰이더에서 사용함 
+
+/////////////
+// GLOBALS //
+/////////////
+Texture2D shaderTexture;
+SamplerState SampleType;
+
+
+//////////////
+// TYPEDEFS //
+//////////////
+struct PixelInputType
+{
+    float4 position : SV_POSITION;
+	float4 color : COLOR;
+    //float2 tex : TEXCOORD0;
+};
+
+
+////////////////////////////////////////////////////////////////////////////////
+// Pixel Shader
+////////////////////////////////////////////////////////////////////////////////
+// COLOR
+float4 ColorPixelShader(PixelInputType input) : SV_TARGET
+{
+	return input.color;
+}
+
+
+// TEXTURE
+/*float4 TexturePixelShader(PixelInputType input) : SV_TARGET
+{
+	float4 textureColor;
+
+
+    // Sample the pixel color from the texture using the sampler at this texture coordinate location.
+    textureColor = shaderTexture.Sample(SampleType, input.tex);
+
+    return textureColor;
+}*/
